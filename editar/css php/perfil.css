@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+    
+  body {
+    background-color: #fff;
+  }
+
+/* _____________________________________________________________________________________ */
+/* HEADER */  
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 90px;
+    background-color: #ffde59;
+}
+    
+  .logo-header img {
+    padding: 55px;
+    height: 210px;
+  }
+  
+  /* barra de pesquisa */
+  .search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto; 
+    background: rgba(240, 248, 255, 0.7);
+    border-radius: 25px;
+    padding: 5px 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search input::placeholder {
+    color: #545454;
+    opacity: 1;
+  }
+  
+  .search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    color: #545454;
+  }
+  
+  .search button:hover {
+    background: transparent;
+  }
+  
+  .search i {
+    font-size: 20px;
+  }
+  
+  /* menu */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+    
+  nav li {
+    margin-right: 30px;
+  }
+    
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+    
+  nav a:hover {
+    color: #fff;
+  }
+
+/* __________________________________________________________________________ */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #F7EEE9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alter-foto-btn {
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+    padding: 8px;
+    background-color: #ffd54f;
+    color: #ffd54f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.info-card {
+    background-color: #faf3e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+.info-item {
+    margin-bottom: 10px;
+}
+.info-label {
+    font-weight: bold;
+}
+.info-value {
+    background-color: #ffd54f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.curriculum {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.edit-btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    padding: 8px;
+    background-color: #ffd54f;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* ___________________________________________________________ */
+/* FOOTER */
+.footer {
+  background-color: #f5f5f5;
+  color: #000;
+  padding-top: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 35px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px; 
+}
+
+.footer-logo img {
+  width: 150px; 
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 8px 8px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.social-icons i:hover {
+  color: #82712D;
+}
+
+.footer-bottom {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
