@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Register</title>
 </head>
 <body>
@@ -18,11 +18,11 @@
             $username = $_POST['username'];
             $email = $_POST['email'];
             $age = $_POST['age'];
-            $senha = $_POST['senha'];
+            $password = $_POST['password'];
 
          //verifying the unique email
 
-         $verify_query = mysqli_query($con,"SELECT Email FROM dados WHERE Email='$email'");
+         $verify_query = mysqli_query($con,"SELECT Email FROM users WHERE Email='$email'");
 
          if(mysqli_num_rows($verify_query) !=0 ){
             echo "<div class='message'>
@@ -32,7 +32,7 @@
          }
          else{
 
-            mysqli_query($con,"INSERT INTO dados(Username,Email,age,Senha) VALUES('$username','$email','$age','$senha')") or die("Erroe Occured");
+            mysqli_query($con,"INSERT INTO users(Username,Email,age,Password) VALUES('$username','$email','$age','$password')") or die("Erroe Occured");
 
             echo "<div class='message'>
                       <p>Registration successfully!</p>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="field input">
                     <label for="password">Senha</label>
-                    <input type="password" name="senha" id="senha" autocomplete="off" required>
+                    <input type="password" name="password" id="password" autocomplete="off" required>
                 </div>
 
                 <div class="field">

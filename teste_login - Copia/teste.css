@@ -10,9 +10,9 @@
     background-color: #fff;
   }
 
-
-
-  .profile-picture {
+/* PRINCIPAL */
+/* foto */
+.profile-picture {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,5 +135,3 @@
   .btn-primary:hover {
    background-color: #f0c83c !important;
   }
-
-  
